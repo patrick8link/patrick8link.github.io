@@ -20,7 +20,7 @@ img { max-width: 100%;
 
 .fixed {
   position: fixed;
-  display: block;
+  width: 200px;
 }
 
 /** Figures */
