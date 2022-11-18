@@ -11,7 +11,12 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { mar
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; }
+img { position: fixed;   max-width: 100%;
+  margin-right: 30px;
+  margin-right: 30px;
+  width: 200px;
+  height: auto;
+  }
 
 /** Figures */
 figure > img { display: block; }
@@ -46,8 +51,19 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(1000px - (30px * 2)); max-width: calc(1000px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 1000px) { .wrapper { max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); padding-right: 15px; padding-left: 15px; } }
+
+.first {
+  width: 200px;
+  float: left; /* add this */
+  border: 1px solid white;
+  margin-right: 30px;
+}
+.second {
+  border: 1px solid white;
+  overflow: hidden; /* if you don't want #second to wrap below #first */
+}
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
